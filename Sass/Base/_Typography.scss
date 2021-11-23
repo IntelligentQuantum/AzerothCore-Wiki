@@ -1,0 +1,31 @@
+.heading
+{
+    color: #101840;
+
+    &--primary
+    {
+        font-size: 3rem;
+    }
+
+    &--secondary
+    {
+        font-size: 1.8rem;
+    }
+
+    &--tertiary
+    {
+        font-size: 1.2rem;
+        color: #757A8C;
+    }
+}
+
+.paragraph
+{
+    font-size: 1.6rem;
+}
+
+.text-primary
+{
+    color: var(--color-primary) !important;
+    font-weight: 500;
+}

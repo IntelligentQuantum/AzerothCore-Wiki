@@ -1,0 +1,157 @@
+.header
+{
+    grid-column: container-start / container-end;
+
+    display: grid;
+    grid-template-columns: [container-start] 15vw [center-start] repeat(10, [col-start] minmax(min-content, 16.66667rem) [col-end])[center-end] 15vw [container-end];
+    align-items: center;
+
+    padding: 1.7rem 0;
+    border-bottom: 1px solid #E6E8F0;
+    margin-bottom: 2rem;
+
+    &__logo
+    {
+        display: flex;
+
+        margin-left: 2.6rem;
+
+        img
+        {
+            height: 2rem;
+            width: 2.9rem;
+        }
+
+        span
+        {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #101840;
+            margin-left: 0.5rem;
+        }
+    }
+
+    &__nav
+    {
+        &--links
+        {
+            display: flex;
+
+            li
+            {
+                font-size: 1.6rem;
+
+                &:not(:last-child)
+                {
+                    margin-right: 3rem;
+                }
+
+                a:link,
+                a:visited
+                {
+                    color: #696F8C;
+                }
+
+                a.active
+                {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    &__optional
+    {
+        grid-column: center-end / container-end;
+
+        display: flex;
+        align-items: center;
+
+        &--github
+        {
+            display: flex;
+            align-items: center;
+
+            svg
+            {
+                height: 2.5rem;
+                width: 2.9rem;
+                fill: #696F8C;
+                margin-right: 1rem;
+            }
+
+            span
+            {
+                border: 1px solid var(--color-fonts);
+                border-radius: 0.4rem;
+                padding: 0.2rem 2rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        &--theme
+        {
+            display: flex;
+            align-items: center;
+
+            margin-left: 2rem;
+
+            input[type="checkbox"]
+            {
+                cursor: pointer;
+                position: relative;
+                width: 6rem;
+                height: 2rem;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                border-radius: 2.5rem;
+                transition: all 0.5s ease-in-out;
+            }
+
+            input:checked[type="checkbox"]
+            {
+                background-color: greenyellow;
+            }
+
+            input:not(:checked)[type="checkbox"]
+            {
+                background-color: var(--color-fonts);
+                border: 1px solid var(--color-fonts);
+            }
+
+            input[type="checkbox"]::before,
+            input[type="checkbox"]::after
+            {
+                content: "";
+                position: absolute;
+                top: 0.2rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                background-color: white;
+                transition: all 0.5s ease-in-out;
+            }
+
+            input[type="checkbox"]::before
+            {
+                left: 0.5rem;
+            }
+
+            input[type="checkbox"]::after
+            {
+                right: 0.5rem;
+            }
+
+            input:checked[type="checkbox"]::before
+            {
+                left: 37%;
+            }
+
+            input:checked[type="checkbox"]::after
+            {
+                right: 38%;
+            }
+        }
+    }
+}

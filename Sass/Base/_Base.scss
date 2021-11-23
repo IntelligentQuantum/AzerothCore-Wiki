@@ -1,0 +1,49 @@
+:root
+{
+    --color-background: #ffffff;
+    --color-primary: #ed2945;
+    --color-fonts: #8f93a9;
+}
+
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-fonts);
+    line-height: 1.7;
+}
+
+a,
+a:visited
+{
+    text-decoration: none;
+    color: var(--color-fonts);
+}
+
+li
+{
+    list-style: none;
+}
+
+.container
+{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [container-start] 15vw [center-start] repeat(10, [col-start] minmax(min-content, 16.66667rem) [col-end])[center-end] 15vw [container-end];
+    grid-template-rows: min-content 1fr min-content;
+}

@@ -9,7 +9,7 @@
         "start": "npm-run-all --parallel devserver watch:sass",
         "compile:sass": "sass Sass/Main.scss Stylesheets/Style.compile.css",
         "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' Stylesheets/Style.compile.css -o Stylesheets/Style.prefix.css",
-        "compress:css": "sass Stylesheets/Style.prefix.css Stylesheets/Style.css --output-style compressed",
+        "compress:css": "sass Stylesheets/Style.prefix.css Stylesheets/Style.css --style compressed",
         "build:css": "npm-run-all compile:sass prefix:css compress:css"
     },
     "repository": {

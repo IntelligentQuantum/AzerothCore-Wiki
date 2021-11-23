@@ -5,11 +5,103 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">     <link rel="shortcut icon" href="Images/favicon.ico">
     <link rel="stylesheet" href="Stylesheets/Style.css">
 
     <title>AzerothCore</title>
 </head>
-<body>
-    <h1>Welcome to the new AzerothCore Wiki</h1>
+<body class="container">
+    <header class="header">
+        <div class="header__logo">
+            <img src="Images/Logo.png" alt="AzerothCore">
+            <span>AzerothCore</span>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__nav--links">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Contribute</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Database</a></li>
+                <li><a href="#">Other</a></li>
+                <li><a href="#">Archive</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__optional">
+            <div class="header__optional--github">
+                <svg class="side-nav__icon">
+                    <use xlink:href="Images/Sprite.svg#icon-github"></use>
+                </svg>
+                <span>1700</span>
+            </div>
+
+            <div class="header__optional--theme">
+                <input type="checkbox" id="toggle" name="theme">
+            </div>
+        </div>
+    </header>
+    <aside class="aside-left">
+        <ul class="aside-left__links">
+            <li class="aside-left__active"><a href="#">Installation Guide</a></li>
+            <li><a href="#">Requirements</a></li>
+            <li><a href="#">Core Installation</a></li>
+            <li><a href="#">Server Setup</a></li>
+            <li><a href="#">Database Installation</a></li>
+            <li><a href="#">Networking</a></li>
+            <li><a href="#">Final Server Steps</a></li>
+            <li><a href="#">Keeping the server up to date</a></li>
+            <li><a href="#">Client Setup</a></li>
+            <li><a href="#">Memory Usage</a></li>
+        </ul>
+    </aside>
+    <main class="main">
+        <section class="home">
+            <div class="main__top">
+                <h2 class="heading heading--primary">Home</h2>
+                <span>View on GitHub</span>
+            </div>
+
+            <p class="paragraph u-margin-bottom-medium">Welcome to the <a class="text-primary" href="#">AzerothCore</a> project wiki</p>
+
+            <h3 class="heading heading--secondary u-margin-bottom-small">Overview</h3>
+            <p class="paragraph">AzerothCore is a complete Open Source and Modular solution for MMO development.</p>
+
+            <h3 class="heading heading--secondary u-margin-bottom-small u-margin-top-small">Solid base</h3>
+            <p class="paragraph">AzerothCore has a strong and solid base, coming from years of development. It is based on MaNGOS, TrinityCore and SunwellCore. We're improving this reliability, offering a project that follows specific versioning rules, allowing you to develop in the right way. Read More...</p>
+
+            <h3 class="heading heading--secondary u-margin-bottom-small u-margin-top-small">Playable</h3>
+            <p class="paragraph">Our main goal is to provide a fully working and playable server application. We will focus our stable revisions on final user experiences, instead of following strict development patterns like our predecessors. Of course we will work to improve the code in every new version that is under development.</p>
+
+            <h3 class="heading heading--secondary u-margin-bottom-small u-margin-top-small">Open Source</h3>
+            <p class="paragraph">AzerothCore modules are released under GNU AGPL 3.0 and GNU GPL 2.0. Both of these licenses are totally free and open source. We believe in the free software, and we love cooperation.</p>
+
+            <h3 class="heading heading--secondary u-margin-bottom-small u-margin-top-small">Tested, reliable, updated</h3>
+            <p class="paragraph">SunwellCore, the father of AzerothCore, successfully ran with thousands of players for years. The goal of AzerothCore is to keep this game application updated, continuing its development.</p>
+
+            <h3 class="heading heading--secondary u-margin-bottom-small u-margin-top-small">Community-driven</h3>
+            <p class="paragraph">The main strength of AzerothCore is its community. Users can help us by improving our code base or simply by submitting any bug report. If you want to contribute, we'd love it!</p>
+
+            <h3 class="heading heading--secondary u-margin-bottom-small u-margin-top-small">Modular</h3>
+            <p class="paragraph">We try to make our software as modular as possible, because modular software is much easier to extend.</p>
+        </section>
+    </main>
+    <aside class="aside-right">
+        <ul class="aside-right__links">
+            <li class="aside-right__active">Overview</li>
+            <li>Solid base</li>
+            <li>Playable</li>
+            <li>Open Source</li>
+            <li>Tested, reliable, updated</li>
+            <li>Community-driven</li>
+            <li>Modular</li>
+        </ul>
+    </aside>
+    <footer class="footer">
+        <div>© <a href="#">AzerothCore</a> 2021</div>
+        <div>Made with ❤️ By <a href="https://Github.Com/IntelligentQuantum">IntelligentQuantum</a></div>
+    </footer>
 </body>
 </html>

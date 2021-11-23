@@ -1,0 +1,24 @@
+.footer
+{
+    grid-column: container-start / container-end;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 4rem 0 2rem 0;
+    font-size: 1.6rem;
+
+    div:not(:last-child)
+    {
+        margin-bottom: 0.7rem;
+    }
+
+    a:link,
+    a:visited
+    {
+        font-weight: 500;
+        color: var(--color-primary);
+    }
+}
