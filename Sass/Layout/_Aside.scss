@@ -7,33 +7,33 @@
 
         li
         {
-            padding: 1.5rem 0.8rem;
+            padding: 1rem 0.8rem;
             margin-bottom: 0.5rem;
 
             &:hover a
             {
-                color: var(--color-primary);
+                color: var(--color-aside-left-links-hover);
             }
 
             &:hover
             {
-                background-color: #fff2f2;
+                background-color: var(--color-aside-left-links-hover-li);
                 border-radius: 0.2rem;
             }
         }
 
         a
         {
-            color: #737893;
+            color: var(--color-aside-left-links);
         }
     }
 
     &__active,
     &__active a
     {
-        background-color: #fff2f2;
+        background-color: var(--color-aside-left-links-hover-li);
         border-radius: 0.2rem;
-        color: var(--color-primary);
+        color: var(--color-aside-left-links-hover);
     }
 }
 
@@ -52,12 +52,19 @@
         li
         {
             font-size: 1.4rem;
-            margin-bottom: 0.7rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            color: var(--color-aside-right-links);
+
+            &:hover
+            {
+                color: var(--color-aside-right-links-hover);
+            }
         }
     }
 
     &__active
     {
-        color: var(--color-primary);
+        color: var(--color-aside-right-links-active) !important;
     }
 }

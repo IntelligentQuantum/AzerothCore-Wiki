@@ -3,7 +3,3 @@ node_modules
 # Idea
 .idea
 .vscode
-
-# Compile
-Stylesheets/Style.*.css*
-*.map

@@ -1,6 +1,6 @@
 .heading
 {
-    color: #101840;
+    color: var(--color-heading);
 
     &--primary
     {
@@ -11,21 +11,16 @@
     {
         font-size: 1.8rem;
     }
-
-    &--tertiary
-    {
-        font-size: 1.2rem;
-        color: #757A8C;
-    }
 }
 
 .paragraph
 {
     font-size: 1.6rem;
+    color: var(--color-paragraph);
 }
 
 .text-primary
 {
-    color: var(--color-primary) !important;
+    color: var(--color-text) !important;
     font-weight: 500;
 }

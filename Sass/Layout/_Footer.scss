@@ -9,8 +9,9 @@
 
     padding: 4rem 0 2rem 0;
     font-size: 1.6rem;
+    color: var(--color-footer);
 
-    div:not(:last-child)
+    p:not(:last-child)
     {
         margin-bottom: 0.7rem;
     }
@@ -19,6 +20,6 @@
     a:visited
     {
         font-weight: 500;
-        color: var(--color-primary);
+        color: var(--color-text);
     }
 }

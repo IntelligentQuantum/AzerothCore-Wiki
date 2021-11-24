@@ -1,10 +1,3 @@
-:root
-{
-    --color-background: #ffffff;
-    --color-primary: #ed2945;
-    --color-fonts: #8f93a9;
-}
-
 *,
 *::after,
 *::before
@@ -19,20 +12,28 @@ html
     font-size: 62.5%;
 }
 
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after
+{
+    transition: all 0.5s !important;
+    transition-delay: 0s !important;
+}
+
 body
 {
     box-sizing: border-box;
 
     font-family: 'Roboto', sans-serif;
-    color: var(--color-fonts);
     line-height: 1.7;
+    background-color: var(--color-body-background);
 }
 
 a,
 a:visited
 {
     text-decoration: none;
-    color: var(--color-fonts);
 }
 
 li
