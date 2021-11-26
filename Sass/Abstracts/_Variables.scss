@@ -59,3 +59,22 @@ html[data-theme='dark']
     --color-text: #638AFF;
     --color-paragraph: rgba(205, 217, 229, 0.7);
 }
+
+$break-points:
+(
+    "break-point-600": 37.5em,   // 600px
+    "break-point-900": 56.25em,  // 900px
+    "break-point-1000": 52.5em,  // 1000px
+    "break-point-1200": 75em,    // 1200px
+    "break-point-1800": 112.5em, // 1800px
+);
+
+$font-weights:
+(
+    "font-weight-thin": 100,
+    "font-weight-light": 300,
+    "font-weight-regular": 400,
+    "font-weight-medium": 500,
+    "font-weight-bold": 700,
+    "font-weight-black": 900,
+);

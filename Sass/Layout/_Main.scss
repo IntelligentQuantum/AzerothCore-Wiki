@@ -3,6 +3,11 @@
     grid-column: center-start / center-end;
     padding: 0 5rem;
 
+    @include media-1200
+    {
+        grid-column: center-start / container-end;
+    }
+
     &__top
     {
         display: flex;
@@ -19,7 +24,7 @@
             padding: 1rem;
             font-size: 1.2rem;
             color: var(--color-main);
-            font-weight: 500;
+            font-weight: font-weight(font-weight-medium);
             cursor: pointer;
         }
     }

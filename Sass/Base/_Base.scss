@@ -45,6 +45,6 @@ li
 {
     height: 100vh;
     display: grid;
-    grid-template-columns: [container-start] 15vw [center-start] repeat(10, [col-start] minmax(min-content, 16.66667rem) [col-end])[center-end] 15vw [container-end];
-    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: [container-start] 24rem [center-start] repeat(10, [col-start] minmax(min-content, 16.66667rem) [col-end])[center-end] 15vw [container-end];
+    grid-template-rows: min-content 1fr 1fr 1fr min-content;
 }

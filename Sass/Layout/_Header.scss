@@ -3,8 +3,13 @@
     grid-column: container-start / container-end;
 
     display: grid;
-    grid-template-columns: [container-start] 15vw [center-start] repeat(10, [col-start] minmax(min-content, 16.66667rem) [col-end])[center-end] 15vw [container-end];
+    grid-template-columns: [container-start] 24rem [center-start] repeat(10, [col-start] minmax(min-content, 16.66667rem) [col-end])[center-end] 15vw [container-end];
     align-items: center;
+
+    @include media-1200
+    {
+        grid-template-columns: [container-start] 24rem [center-start] repeat(10, [col-start] minmax(min-content, 16.66667rem) [col-end])[center-end];
+    }
 
     padding: 1.7rem 0;
     border-bottom: 1px solid var(--color-header-border);
@@ -16,6 +21,7 @@
         display: flex;
 
         margin-left: 2.6rem;
+        cursor: pointer;
 
         img
         {
@@ -35,6 +41,8 @@
 
     &__nav
     {
+        padding-left: 5rem;
+
         &--links
         {
             display: flex;
@@ -77,6 +85,7 @@
 
         display: flex;
         align-items: center;
+        margin-right: 2rem;
 
         &--github
         {
